@@ -3,7 +3,9 @@ package module;
 sub new {
    my $class = shift;
    my $self = {};
-   $self->{foo} = "Foo";
+   my $value = shift;
+   $value ||= "Foo";
+   $self->{foo} = $value;
    bless($self,$class);
 }
 
