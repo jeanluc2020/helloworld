@@ -14,4 +14,9 @@ sub do_print {
    print $self->{foo} . "\n";
 }
 
+sub doit {
+   my $self = shift;
+   return $self->{foo};
+}
+
 1;
